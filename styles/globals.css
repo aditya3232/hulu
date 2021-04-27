@@ -1,5 +1,19 @@
 /* hiraukan warningnya */
 /* untuk menghilangkan warning, disetting css.validate g usa dicentang */
+/* ini adalah css yg digunakan secara global */
+/* penulisan tailwind css berbeda dengan css biasa */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+- base adalah dasar
+- @layer base, berarti kita mengakses tailwind base
+- kemudian kita memodifikasi body dari dokumen html, dengan menerapkan background color dan warna text
+- 300 memiliki arti semakin besar nilainya maka semakin gelap warnanya. max nya adalah 900
+*/
+@layer base {
+  body {
+    @apply bg-[#06202a] text-gray-300;
+  }
+}
