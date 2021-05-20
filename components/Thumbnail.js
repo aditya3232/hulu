@@ -1,3 +1,4 @@
+// komponen thumbnail (kotak informasi filmnya)
 import Image from 'next/image';
 import { ThumbUpIcon } from '@heroicons/react/outline';
 
